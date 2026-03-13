@@ -21,6 +21,8 @@ body {
   overflow:hidden;
 }
 
+/* main content */
+
 .container {
   max-width:700px;
   padding:40px;
@@ -30,8 +32,8 @@ body {
 
 h1 {
   font-size:64px;
-  letter-spacing:10px;
-  margin-bottom:15px;
+  letter-spacing:12px;
+  margin-bottom:18px;
   font-weight:600;
 }
 
@@ -39,8 +41,39 @@ p {
   color:#9ca3af;
   line-height:1.7;
   font-size:18px;
-  margin-bottom:20px;
+  margin-bottom:22px;
 }
+
+/* divider */
+
+.divider {
+  width:90px;
+  height:1px;
+  background:#334155;
+  margin:28px auto;
+  opacity:0.8;
+}
+
+/* watermark chimp */
+
+.mark {
+  position:absolute;
+  width:420px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -55%);
+  opacity:0.055;
+  filter:blur(0.5px);
+  z-index:1;
+  pointer-events:none;
+  transition:opacity 0.6s ease;
+}
+
+.mark:hover {
+  opacity:0.09;
+}
+
+/* footer */
 
 footer {
   position:absolute;
@@ -49,27 +82,7 @@ footer {
   color:#6b7280;
   width:100%;
   text-align:center;
-}
-
-/* subtle chimp watermark */
-
-.mark {
-  position:absolute;
-  width:500px;
-  opacity:0.04;
-  right:-100px;
-  bottom:-120px;
-  z-index:1;
-  pointer-events:none;
-}
-
-/* slight blue accent line */
-
-.divider {
-  width:80px;
-  height:2px;
-  background:#334155;
-  margin:25px auto;
+  letter-spacing:1px;
 }
 
 </style>
@@ -86,8 +99,8 @@ footer {
 <div class="divider"></div>
 
 <p>
-Commercial real estate and construction work requiring
-clear thinking and disciplined execution.
+Commercial real estate and construction work requiring clear thinking
+and disciplined execution.
 </p>
 
 <p>

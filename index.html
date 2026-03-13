@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCX Advisory</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f1720;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 56px;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #9ca3af;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #cbd5f5;
+      line-height: 1.6;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .email {
+      font-size: 18px;
+      color: #53d6ff;
+      text-decoration: none;
+      border-bottom: 1px solid #53d6ff;
+      padding-bottom: 2px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      color: #6b7280;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CCX</h1>
+    <h2>Advisory</h2>
+
+    <p>
+      Strategic advisory focused on development, capital structuring,
+      and complex project execution.
+    </p>
+
+    <p>
+      For inquiries:
+      <br />
+      <a class="email" href="mailto:matt@ccxadvisory.com">matt@ccxadvisory.com</a>
+    </p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> CCX Advisory
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
